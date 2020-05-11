@@ -47,7 +47,7 @@ function importArticle(message) {
     $("#title").val(message.title);
 
     var $body = $('iframe').contents().find('body');
-    $body.empty();
+    //$body.empty();
     $body.append(message.articleElement);
 
     function top1() {
